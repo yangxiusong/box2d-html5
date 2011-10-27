@@ -4,6 +4,7 @@
   <Content type="html">
     <![CDATA[
       Hello, world!
+      <iframe src="http://box2d-html5.googlecode.com/svn/demo/index.html"/>
     ]]>
   </Content>
 </Module>
