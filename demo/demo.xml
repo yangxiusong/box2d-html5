@@ -52,7 +52,7 @@
                 iframe.setAttribute('src', src);
                 var dest = document.getElementById('dest');
                 dest.appendChild(iframe);
-                var autofit = prefs.getBoolean('autofit');
+                var autofit = true;//prefs.getBoolean('autofit');
                 if (autofit)
                 {
                     window.adjustHeight();
