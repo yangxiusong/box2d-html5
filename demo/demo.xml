@@ -16,6 +16,7 @@
         <EnumValue value="no" display_value="no"/>
         <EnumValue value="yes" display_value="yes"/>
     </UserPref>
+    <UserPref name="autofit" display_name="autofit" default_value="no" datatype="boolean"/>
     <Content type="html" view="default,canvas">
         <![CDATA[
             <div id='dest' />
@@ -51,6 +52,11 @@
                 iframe.setAttribute('src', src);
                 var dest = document.getElementById('dest');
                 dest.appendChild(iframe);
+                var autofit = prefs.getBoolean('autofit');
+                if (autofit)
+                {
+                    window.adjustHeight();
+                }
             }
             gadgets.util.registerOnLoadHandler(OnLoad);
             </script>
